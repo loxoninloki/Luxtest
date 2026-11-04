@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUX テスト</title>
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f4effa; color: #392d4b; font-family: system-ui, sans-serif; }
+    main { padding: 32px; text-align: center; }
+    button { padding: 14px 24px; border: 0; border-radius: 12px; background: #72509a; color: white; font: inherit; cursor: pointer; }
+    button:focus-visible { outline: 3px solid #392d4b; outline-offset: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>LUX テスト</h1>
+    <p>ろきさん、準備できています。</p>
+    <button id="test-button" type="button">動作テスト</button>
+    <p id="result" role="status">ボタンを押してください。</p>
+  </main>
+  <script>
+    document.getElementById("test-button").addEventListener("click", () => {
+      document.getElementById("result").textContent = "LUXの動作テスト成功";
+    });
+  </script>
+</body>
+</html>
